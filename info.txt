@@ -1,0 +1,42 @@
+Reading Lines from File
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
+// create ifstream object called infile with specified file name as a string
+// best to use absolute file path
+ex: "Users/UserName/Desktop/Project4/members.txt"
+ifstream infile("filepath.txt");
+
+if (!infile) {
+	… cant open file …
+}
+
+// can call getline()
+
+string line;
+while (getline(infile, line)) {
+	
+}
+
+
+string line = "123    11:59";
+istringstream iss(line);
+int num;
+int h;
+int ml
+char junk;
+
+// pulling the "123" (until it hits whitespace) from the string and puts it in num
+// ignoring whitespace
+// pulling the "11" from the string and puts it in h
+iss >> num >> h;
+
+// gets the next character from the string and stores it in junk (doesn't ignore whitespace/other characters)
+iss.get(junk);
+iss >> m;
+
+
+// stores all characters into id until it hits the colon
+getline(iss, id, ':')
